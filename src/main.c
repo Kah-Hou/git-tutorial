@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void main(void)
+int main(void)
 {
 	printf("Hello ESPL");
 
-	return 0
+	return 0;
 }

@@ -14,11 +14,12 @@ int main(void)
 
 		word = num_to_words(number);
 
-		printf("%d : %s \n",&number, word);
+		printf("%d : %s \n",number, word);
 
 		printf("Do you wish to exit ? Y/N\n");
 		scanf("%c",&decision);
 		fflush(stdin);
+
 	}while(decision != 'Y');
 
 	return 0;

@@ -9,17 +9,17 @@ int main(void)
 	do
 	{
 		printf("Please enter a number between 0 and 9, then press ENTER\n");
-		scanf("%d",&number);
-		fflush(stdin);
+		number = (int)(getchar() - '0');
+		getchar();
 
 		word = num_to_words(number);
 
 		printf("%d : %s \n",number, word);
-		fflush(stdin);
 		
 		printf("Do you wish to exit ? Y/N\n");
-		scanf("%c",&decision);
-		fflush(stdin);
+
+		decision = getchar();
+		getchar();
 
 	}while(decision != 'Y');
 

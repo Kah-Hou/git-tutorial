@@ -15,7 +15,8 @@ int main(void)
 		word = num_to_words(number);
 
 		printf("%d : %s \n",number, word);
-
+		fflush(stdin);
+		
 		printf("Do you wish to exit ? Y/N\n");
 		scanf("%c",&decision);
 		fflush(stdin);
